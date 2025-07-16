@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limpeza de Vidros | Giolimp</title>
+  <meta name="description" content="Limpeza técnica de vidros em residências, comércios e prédios. Atendemos locais altos com segurança e equipamentos.">
+  <link rel="stylesheet" href="../assets/css/servico.css">
+</head>
+<body>
+  <header>
+    <h1>Limpeza de Vidros</h1>
+    <p class="descricao-servico">
+      Limpeza detalhada de vidros em janelas, fachadas, portas, box e sacadas. Técnicas seguras e equipamentos profissionais.
+    </p>
+    <nav class="voltar">
+  <a href="../index.html" aria-label="Voltar para todos os serviços">← Voltar para Todos os Serviços</a>
+  </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <h2>Galeria de Fotos</h2>
+
+      <div class="filtro-localizacao">
+        <button class="filtro-btn ativo" data-local="todos">Todos</button>
+        <button class="filtro-btn" data-local="alphaville">Alphaville</button>
+        <button class="filtro-btn" data-local="belvedere">Belvedere</button>
+        <button class="filtro-btn" data-local="contagem">Contagem</button>
+        <button class="filtro-btn" data-local="ibirite">Ibirité</button>
+      </div>
+
+      <!-- Galeria de fotos dos serviços de limpeza de vidros -->
+      <div class="grid-fotos" id="galeria">
+        <!-- Fotos de Alphaville -->
+        <div class="grupo-fotos" data-local="alphaville">
+          <img src="../assets/img/servicos/limpeza-vidros/alphaville/01.jpg" alt="Alphaville - limpeza de vidros" loading="lazy">
+        </div>
+        <!-- Fotos de Belvedere -->
+        <div class="grupo-fotos" data-local="belvedere">
+          <img src="../assets/img/servicos/limpeza-vidros/belvedere/01.jpg" alt="Belvedere - limpeza de vidros" loading="lazy">
+        </div>
+        <!-- Fotos de Contagem -->
+        <div class="grupo-fotos" data-local="contagem">
+          <img src="../assets/img/servicos/limpeza-vidros/contagem/01.jpg" alt="Contagem - limpeza de vidros" loading="lazy">
+        </div>
+        <!-- Fotos de Ibirité -->
+        <div class="grupo-fotos" data-local="ibirite">
+          <img src="../assets/img/servicos/limpeza-vidros/ibirite/01.jpg" alt="Ibirité - limpeza de vidros" loading="lazy">
+        </div>
+      </div>
+
+      <button id="verMaisBtn">Ver mais</button>
+    </section>
+  </main>
+
+  <script src="../assets/js/servico.js"></script>
+</body>
+</html>
