@@ -46,16 +46,101 @@ O site conta com seções bem definidas, galeria de fotos por serviço, formulá
 ## 📂 Estrutura de Pastas
 
 ```
-giolimp/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── img/
-│   │   └── (imagens da empresa, serviços, logos)
-│   └── js/
-│       └── script.js
+├── README.md
+├── assets
+    ├── Dump
+    │   ├── limpeza-pos-obra.Ori.html
+    │   ├── limpeza-vidros.Ori.html
+    │   ├── mudanca.Ori.html
+    │   ├── script.js
+    │   ├── servico copy.js
+    │   ├── servico.css
+    │   ├── servico.js
+    │   ├── servicoOri.js
+    │   ├── servicoOri1.js
+    │   ├── style copy.css
+    │   ├── style.css
+    │   └── tratamento-pisos.Ori.html
+    ├── css
+    │   ├── servico.css
+    │   └── style.css
+    ├── fonts
+    │   └── moon-get.woff2
+    ├── img
+    │   ├── giovanni.1.jpg
+    │   ├── giovanni.jpg
+    │   ├── hero-bg.jpg
+    │   ├── icon1.png
+    │   ├── icon2.png
+    │   ├── icon3.png
+    │   ├── icon4.png
+    │   ├── limpeza.jpg
+    │   ├── logo-sevendevx.png
+    │   ├── logo.png
+    │   └── servicos
+    │   │   ├── limpeza-pos-obra
+    │   │       ├── 01.jpg
+    │   │       ├── 02.jpg
+    │   │       ├── 03.jpg
+    │   │       ├── 04.jpg
+    │   │       ├── 05.jpg
+    │   │       ├── 06.jpg
+    │   │       ├── 07.jpg
+    │   │       ├── 08.jpg
+    │   │       ├── 09.jpg
+    │   │       └── 10.jpg
+    │   │   ├── limpeza-vidros
+    │   │       ├── 01.jpg
+    │   │       ├── 02.jpg
+    │   │       ├── 03.jpg
+    │   │       ├── 04.jpg
+    │   │       ├── 05.jpg
+    │   │       ├── 06.jpg
+    │   │       ├── 07.jpg
+    │   │       ├── 08.jpg
+    │   │       ├── 09.jpg
+    │   │       ├── 10.jpg
+    │   │       ├── 11.jpg
+    │   │       ├── 12.jpg
+    │   │       └── 13.jpg
+    │   │   └── tratamento-pisos
+    │   │       ├── 01.jpg
+    │   │       ├── 02.jpg
+    │   │       ├── 03.jpg
+    │   │       ├── 04.jpg
+    │   │       ├── 05.jpg
+    │   │       ├── 06.jpg
+    │   │       ├── 07.jpg
+    │   │       ├── 08.jpg
+    │   │       ├── 09.jpg
+    │   │       ├── 10.jpg
+    │   │       ├── 11.jpg
+    │   │       ├── 12.jpg
+    │   │       ├── 13.jpg
+    │   │       ├── 14.jpg
+    │   │       ├── 15.jpg
+    │   │       ├── 16.jpg
+    │   │       ├── 17.jpg
+    │   │       ├── 18.jpg
+    │   │       ├── 19.jpg
+    │   │       ├── 20.jpg
+    │   │       ├── 21.jpg
+    │   │       ├── 22.jpg
+    │   │       ├── 23.jpg
+    │   │       ├── 24.jpg
+    │   │       └── 25.jpg
+    └── js
+    │   ├── modal-servico.js
+    │   ├── script 1.js
+    │   ├── script.js
+    │   └── servico.js
 ├── index.html
-└── README.md
+├── indexOff.html
+└── servicos
+    ├── limpeza-pos-obra.html
+    ├── limpeza-vidros.html
+    ├── mudanca.html
+    └── tratamento-pisos.html
 ```
 
 ---
