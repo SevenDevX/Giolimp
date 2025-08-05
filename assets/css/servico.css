@@ -46,59 +46,61 @@ header h1 {
 
 .grid-fotos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .grid-fotos img {
   width: 100%;
-  border-radius: 10px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  transition: transform 0.18s, box-shadow 0.18s;
 }
 
 .grid-fotos img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transform: scale(1.045);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
 }
 
 #verMaisBtn {
-  margin-top: 2rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  margin-top: 2.5rem;
+  padding: 0.9rem 2rem;
+  font-size: 1.08rem;
   background: var(--azul-medio);
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 500;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  transition: background 0.3s, box-shadow 0.2s;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  transition: background 0.22s, box-shadow 0.18s;
 }
 
 #verMaisBtn:hover {
   background: var(--azul-escuro);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.16);
 }
 
 /* Voltar para serviços */
 .voltar {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .voltar a {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   background: var(--cinza-btn);
   color: #333;
-  border-radius: 6px;
+  border-radius: 7px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s, color 0.2s;
+  transition: background 0.22s, color 0.18s;
 }
 
 .voltar a:hover {
@@ -109,11 +111,10 @@ header h1 {
 /* Lightbox */
 .lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.88);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,15 +123,15 @@ header h1 {
 }
 
 .lightbox img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 10px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.28);
 }
 
 .lightbox.active {
   display: flex;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.28s ease-in;
 }
 
 @keyframes fadeIn {
@@ -139,7 +140,7 @@ header h1 {
 }
 
 .filtro-localizacao {
-  margin: 2rem 0;
+  margin: 2.2rem 0 1.2rem 0;
   text-align: center;
 }
 
@@ -147,12 +148,12 @@ header h1 {
   background: var(--azul-medio);
   color: #fff;
   border: none;
-  padding: 0.6rem 1.2rem;
-  margin: 0 0.3rem;
-  border-radius: 5px;
+  padding: 0.7rem 1.3rem;
+  margin: 0 0.35rem;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  transition: background 0.3s;
+  transition: background 0.22s;
 }
 
 .filtro-btn.ativo,
@@ -163,19 +164,52 @@ header h1 {
 .grupo-fotos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .grupo-fotos img {
   width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.18);
-  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 320px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.20);
+  transition: transform 0.18s, box-shadow 0.18s;
 }
 
 .grupo-fotos img:hover {
   transform: scale(1.06);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.24);
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .grid-fotos {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .galeria {
+    padding: 1.2rem 0.3rem;
+  }
+  .grupo-fotos img {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .galeria h2 {
+    font-size: 1.1rem;
+  }
+  .descricao-servico {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .grid-fotos {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
 }
