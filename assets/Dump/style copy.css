@@ -122,17 +122,10 @@ body {
   cursor: pointer;
   display: none;
   padding: 0.5rem;
-  z-index: 1100;
-  outline: none;
-}
-
-.menu-toggle:focus-visible {
-  outline: 2px solid var(--azul-claro);
-  outline-offset: 2px;
 }
 
 .hamburguer {
-  width: 28px;
+  width: 25px;
   height: 3px;
   background: #fff;
   border-radius: 2px;
@@ -145,65 +138,34 @@ body {
 .hamburguer::after {
   content: '';
   position: absolute;
-  width: 28px;
+  width: 25px;
   height: 3px;
   background: #fff;
   left: 0;
   border-radius: 2px;
-  transition: transform 0.3s, top 0.3s, opacity 0.3s;
+  transition: top 0.3s;
 }
 
-.hamburguer::before {
-  top: -9px;
-}
-
-.hamburguer::after {
-  top: 9px;
-}
-
-/* Animação para menu aberto */
-.menu-toggle.active .hamburguer {
-  background: transparent;
-}
-
-.menu-toggle.active .hamburguer::before {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.menu-toggle.active .hamburguer::after {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-.menu-toggle.active .hamburguer::before,
-.menu-toggle.active .hamburguer::after {
-  top: 0;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-}
+.hamburguer::before { top: -8px; }
+.hamburguer::after { top: 8px; }
 
 /* =================== HERO =================== */
 .hero {
   background: url('/assets/img/hero-bg.jpg') center/cover no-repeat;
-  min-height: 75vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0;
 }
 
 .overlay {
-  background: rgba(0,63,115,0.82);
+  background: rgba(0,63,115,0.8);
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
 }
 
 .hero-text {
@@ -211,25 +173,21 @@ body {
   z-index: 1;
   color: var(--branco);
   text-align: center;
-  max-width: 700px;
-  padding: 2.5rem 1.2rem;
-  margin: 0 auto;
-  text-shadow: 1px 2px 8px rgba(0,0,0,0.18);
+  max-width: 800px;
+  padding: 2rem 1.5rem;
 }
 
 .hero-text h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 1.1rem;
-  letter-spacing: 0.01em;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .hero-text p {
-  font-size: 1.18rem;
-  line-height: 1.7;
-  margin-top: 0.7rem;
-  opacity: 0.97;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-top: 0.8rem;
 }
 
 /* =================== SERVIÇOS =================== */
